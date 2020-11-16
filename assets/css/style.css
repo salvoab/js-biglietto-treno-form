@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Utility*/
+.bg-grey{
+    background-color: #808080;
+}
+
+.m-1{
+    margin: 1rem;
+}
+
+.rounded{
+    border-radius: 10px;
+}
+
+.border-y{
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+/*END Utility*/
+
+body{
+    background-color: #b91450;
+}
+
+main{
+    margin-top: 50px;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+section{
+    width: 80%;
+    margin: auto;
+}
+
+.card{
+    background-color: white;
+    padding: 3rem 0;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+    display: flex;
+}
+.flex-grow{
+    flex-grow: 1;
+}
+
+table{
+    width: 100%;
+}
+
+#dati-biglietto .row:first-child{
+    justify-content: space-around;
+}
+
+#dati-biglietto .row:first-child .col{
+    flex-direction: column;
+}
+
+#dati-biglietto .row:last-child{
+    justify-content: center;
+}

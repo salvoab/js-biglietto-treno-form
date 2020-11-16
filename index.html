@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biglietto del Treno</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <main>
+            <section id="dati-biglietto">
+                <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        
+                <div class="card rounded">
+                    <div class="row">
+                        <div class="col">
+                            <label for="nome">Nome e Cognome</label>
+                            <input type="text" name="nome" id="full-name">
+                        </div>
+                        <div class="col">
+                            <label for="km">Km da percorrere</label>
+                            <input type="number" name="km" id="km">
+                        </div>
+                        <div class="col">
+                            <label for="eta">Fascia di età</label>
+                            <select name="eta" id="eta">
+                                <option value="Minorenne">Minorenne</option>
+                                <option value="Maggiorenne">Maggiorenne</option>
+                                <option value="Over65">Over65</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button id="btn-genera" class="m-1">Genera</button>
+                        <button id="btn-annulla" class="m-1">Annulla</button>
+                    </div>
+                </div>
+            </section>
+            <!-- /#calcolo-biglietto -->
+        
+            <section id="biglietto">
+                <h2>IL TUO BIGLIETTO</h2>
+    
+                <div class="card">
+                    <h3>DETTAGLIO PASSEGGERI</h3>
+                    <div class="row border-y">
+                        <div class="col bg-grey">
+                            <h3>NOME PASSEGGERO</h3>
+                            <div id="nome-passeggero"></div>
+                        </div>
+                        <div class="col flex-grow">
+                            <table>
+                                <tr>
+                                    <th>Offerta</th>
+                                    <th>Carrozza</th>
+                                    <th>Codice CP</th>
+                                    <th>Costo biglietto</th>
+                                </tr>
+                                <tr>
+                                    <td id="sconto"></td>
+                                    <td id="carrozza"></td>
+                                    <td id="codice-cp"></td>
+                                    <td id="prezzo-biglietto"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /#biglietto -->
+        </main>
+
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
