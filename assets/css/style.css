@@ -81,5 +81,16 @@ th{
 }
 
 #biglietto{
-    display: none;
+    opacity: 0;
+}
+
+/* Classi che verranno aggiunte dinamicamente in main.js per transizioni di 
+   apparizione e scomparsa della sezione #biglietto */
+#biglietto.appare{
+    transition: 1s;
+    opacity: 1;
+}
+#biglietto.scompare{
+    transition: 1s;
+    opacity: 0;
 }

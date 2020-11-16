@@ -39,7 +39,11 @@ btnGenera.addEventListener("click", function(){
         elementoCodiceCp.innerHTML = Math.floor(Math.random() * (100000 - 90000) ) + 90000;
         elementoPrezzo.innerHTML = prezzoBiglietto.toFixed(2) + "€";
         var sezioneBiglietto = document.getElementById("biglietto");
-        sezioneBiglietto.style.display = "block";
+        //Transizione
+        //Tolgo la classe scompare che nello style.css applica una transizione con opacity 0
+        sezioneBiglietto.classList.remove("scompare");
+        //Aggiungo la classe appare che applica una transizione con opacity 1
+        sezioneBiglietto.classList.add("appare");
     }
     else{
         alert("Errore! E' obbligatorio inserire Nome e Cognome e i km devono essere più di zero");
@@ -52,5 +56,9 @@ btnAnnulla.addEventListener("click", function(){
     document.getElementById("km").value = "";
     document.getElementById("eta").value = "minorenne";
     var sezioneBiglietto = document.getElementById("biglietto");
-    sezioneBiglietto.style.display = "none";
+    //Transizione
+    //Tolgo la classe appare che nello style.css applica una transizione con opacity 1
+    sezioneBiglietto.classList.remove("appare");
+    //Aggiungo la classe scompare che applica una transizione con opacity 0
+    sezioneBiglietto.classList.add("scompare");
 });
