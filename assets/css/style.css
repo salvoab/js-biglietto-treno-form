@@ -97,12 +97,18 @@ button{
 
 table{
     width: 90%;
+    margin-top: 14px;
     margin-left: 10%;
-    height: 200px;
+    height: 80%;
+    font-size: 1.1rem;
 }
 
 th{
     text-align: left;
+}
+
+tbody > tr{
+    vertical-align: bottom;
 }
 
 #dati-biglietto .row:first-child{
