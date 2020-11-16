@@ -11,6 +11,12 @@
 .m-1{
     margin: 1rem;
 }
+.mt-3{
+    margin-top: 3rem;
+}
+.p-15{
+    padding: 15px;
+}
 
 .rounded{
     border-radius: 10px;
@@ -33,6 +39,7 @@ main{
 h2{
     color: white;
     text-align: center;
+    margin-top: 2rem;
 }
 
 section{
@@ -52,6 +59,7 @@ section{
 .col{
     display: flex;
 }
+
 .flex-grow{
     flex-grow: 1;
 }
@@ -59,9 +67,38 @@ section{
     flex-direction: column;
 }
 
+.card.rounded .col{
+    align-items: center;
+}
+
+label{
+    color: #b91450;
+    padding: 20px 0;
+}
+
+input, select{
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 2px solid #b91450;
+    text-align: center;
+}
+
+input:focus, select:focus{
+    background-color: #b91450;
+    border-radius: 8px;
+}
+
+button{
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    color: #b91450;
+}
+
 table{
     width: 90%;
-    margin: auto;
+    margin-left: 10%;
+    height: 200px;
 }
 
 th{
@@ -82,6 +119,11 @@ th{
 
 #biglietto{
     opacity: 0;
+    margin-bottom: 50px;
+}
+
+#biglietto .row{
+    height: 200px;
 }
 
 /* Classi che verranno aggiunte dinamicamente in main.js per transizioni di 
