@@ -79,3 +79,7 @@ th{
 #dati-biglietto .row:last-child{
     justify-content: center;
 }
+
+#biglietto{
+    display: none;
+}

@@ -38,8 +38,19 @@ btnGenera.addEventListener("click", function(){
         //Codice Cp è un numero compreso fra 90000 e 100000
         elementoCodiceCp.innerHTML = Math.floor(Math.random() * (100000 - 90000) ) + 90000;
         elementoPrezzo.innerHTML = prezzoBiglietto.toFixed(2) + "€";
+        var sezioneBiglietto = document.getElementById("biglietto");
+        sezioneBiglietto.style.display = "block";
     }
     else{
         alert("Errore! E' obbligatorio inserire Nome e Cognome e i km devono essere più di zero");
     }
+});
+
+
+btnAnnulla.addEventListener("click", function(){
+    document.getElementById("full-name").value = "";
+    document.getElementById("km").value = "";
+    document.getElementById("eta").value = "minorenne";
+    var sezioneBiglietto = document.getElementById("biglietto");
+    sezioneBiglietto.style.display = "none";
 });
