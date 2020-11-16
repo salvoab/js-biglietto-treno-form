@@ -55,9 +55,17 @@ section{
 .flex-grow{
     flex-grow: 1;
 }
+.flex-dir-column{
+    flex-direction: column;
+}
 
 table{
-    width: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+th{
+    text-align: left;
 }
 
 #dati-biglietto .row:first-child{

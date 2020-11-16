@@ -44,24 +44,28 @@
                 <div class="card">
                     <h3>DETTAGLIO PASSEGGERI</h3>
                     <div class="row border-y">
-                        <div class="col bg-grey">
+                        <div class="col bg-grey flex-dir-column">
                             <h3>NOME PASSEGGERO</h3>
-                            <div id="nome-passeggero"></div>
+                            <h3 id="nome-passeggero"></h3>
                         </div>
                         <div class="col flex-grow">
                             <table>
-                                <tr>
-                                    <th>Offerta</th>
-                                    <th>Carrozza</th>
-                                    <th>Codice CP</th>
-                                    <th>Costo biglietto</th>
-                                </tr>
-                                <tr>
-                                    <td id="sconto"></td>
-                                    <td id="carrozza"></td>
-                                    <td id="codice-cp"></td>
-                                    <td id="prezzo-biglietto"></td>
-                                </tr>
+                                <thead>
+                                    <tr>
+                                        <th>Offerta</th>
+                                        <th>Carrozza</th>
+                                        <th>Codice CP</th>
+                                        <th>Costo biglietto</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="offerta"></td>
+                                        <td id="carrozza"></td>
+                                        <td id="codice-cp"></td>
+                                        <td id="prezzo-biglietto"></td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>
